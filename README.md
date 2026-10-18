@@ -6,13 +6,8 @@ A responsive hotel website built using Next.js, React, and TypeScript.
 
 Install dependencies:
 
-```bash
+```bash id="4pd2u8"
 npm install
-```
-
-Start the development server:
-
-```bash
 npm run dev
 ```
 
@@ -20,15 +15,8 @@ Open http://localhost:3000 in your browser.
 
 ## Production Build
 
-Build the application:
-
-```bash
+```bash id="v1c7rz"
 npm run build
-```
-
-Start the production server:
-
-```bash
 npm start
 ```
 
