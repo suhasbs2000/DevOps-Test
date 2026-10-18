@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f3ed">
+  <meta name="description" content="A slower kind of seaside stay at Harbor House Hotel, on the quiet edge of the coast.">
+  <title>Harbor House Hotel | A slower kind of stay</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="wordmark" href="#top" aria-label="Harbor House Hotel home">
+      <span class="wordmark-mark" aria-hidden="true">H</span>
+      <span>HARBOR HOUSE<small>HOTEL · COASTAL MAINE</small></span>
+    </a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open navigation">
+      <span></span><span></span>
+    </button>
+    <nav class="nav" id="primary-nav" aria-label="Main navigation">
+      <a href="#stay">The stay</a>
+      <a href="#rooms">Rooms</a>
+      <a href="#gather">Gather</a>
+      <a class="nav-book" href="#booking">Check availability <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <img class="hero-image" src="https://images.unsplash.com/photo-1473116763249-2faaef81ccda?auto=format&fit=crop&w=2200&q=85" alt="Quiet shoreline at golden hour with a small wooden boat" fetchpriority="high">
+      <div class="hero-shade"></div>
+      <div class="hero-copy">
+        <p class="eyebrow light">A little further from the everyday</p>
+        <h1 id="hero-title">Find your<br>way back <em>to calm.</em></h1>
+        <p class="hero-intro">A small coastal hotel for long mornings, salt air, and nowhere else you need to be.</p>
+        <a class="text-link light-link" href="#stay">Discover Harbor House <span aria-hidden="true">↓</span></a>
+      </div>
+      <div class="hero-caption"><span>44° 06′ 18.2″ N</span><span>Rockport, Maine</span></div>
+    </section>
+
+    <section class="booking-wrap" id="booking" aria-label="Plan your stay">
+      <form class="booking-form" id="booking-form">
+        <div class="booking-heading">
+          <span class="eyebrow">Make room for a getaway</span>
+          <h2>Plan your stay</h2>
+        </div>
+        <label class="field"><span>Arrival</span><input id="arrival" name="arrival" type="date" required></label>
+        <label class="field"><span>Departure</span><input id="departure" name="departure" type="date" required></label>
+        <label class="field guests-field"><span>Guests</span><select name="guests" aria-label="Number of guests"><option>1 guest</option><option selected>2 guests</option><option>3 guests</option><option>4 guests</option></select></label>
+        <button class="button button-dark" type="submit">Find a room <span aria-hidden="true">↗</span></button>
+        <p class="booking-message" id="booking-message" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+
+    <section class="intro section-pad" id="stay">
+      <div class="section-kicker"><span>01</span><span>The Harbor House feeling</span></div>
+      <div class="intro-content">
+        <h2>Come for the coast.<br><em>Stay for the stillness.</em></h2>
+        <div class="intro-text">
+          <p>Set between a working harbor and a stretch of pine-fringed shore, Harbor House is a place to settle into the unhurried rhythm of the sea.</p>
+          <p>Thoughtful rooms, a kitchen led by the seasons, and the kind of welcome that feels like coming back.</p>
+          <a class="text-link dark-link" href="#gather">A place to linger <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+      <div class="intro-image-wrap">
+        <img src="https://images.unsplash.com/photo-1510798831971-661eb04b3739?auto=format&fit=crop&w=1600&q=85" alt="Warm timber cabin tucked among coastal trees" loading="lazy">
+        <span class="image-note">A slower pace, by design</span>
+      </div>
+    </section>
+
+    <section class="rooms section-pad" id="rooms">
+      <div class="rooms-top">
+        <div class="section-kicker"><span>02</span><span>Stay a while</span></div>
+        <div class="rooms-heading"><h2>Rooms with a<br><em>view to unwind.</em></h2><p>Quietly considered spaces. Natural textures. A little more room to breathe.</p></div>
+      </div>
+      <div class="room-grid">
+        <article class="room-card">
+          <a class="room-image" href="#booking" aria-label="Check availability for The Cove Room">
+            <img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=1000&q=85" alt="Light-filled guest room with linen bedding" loading="lazy">
+            <span class="room-number">01 / 03</span>
+          </a>
+          <div class="room-details"><div><h3>The Cove Room</h3><p>Soft morning light · Queen bed</p></div><a href="#booking" aria-label="Book The Cove Room">↗</a></div>
+        </article>
+        <article class="room-card">
+          <a class="room-image" href="#booking" aria-label="Check availability for The Lookout Suite">
+            <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1000&q=85" alt="Calm suite interior with natural wood and soft neutral details" loading="lazy">
+            <span class="room-number">02 / 03</span>
+          </a>
+          <div class="room-details"><div><h3>The Lookout Suite</h3><p>Harbor views · King bed</p></div><a href="#booking" aria-label="Book The Lookout Suite">↗</a></div>
+        </article>
+        <article class="room-card">
+          <a class="room-image" href="#booking" aria-label="Check availability for The Saltbox Cottage">
+            <img src="https://images.unsplash.com/photo-1449158743715-0a90ebb6d2d8?auto=format&fit=crop&w=1000&q=85" alt="Small coastal cottage surrounded by greenery" loading="lazy">
+            <span class="room-number">03 / 03</span>
+          </a>
+          <div class="room-details"><div><h3>The Saltbox Cottage</h3><p>Private garden · Two bedrooms</p></div><a href="#booking" aria-label="Book The Saltbox Cottage">↗</a></div>
+        </article>
+      </div>
+      <a class="text-link dark-link all-rooms" href="#booking">Explore all rooms <span aria-hidden="true">↗</span></a>
+    </section>
+
+    <section class="gather" id="gather">
+      <div class="gather-image">
+        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1500&q=85" alt="A welcoming dining room set for an intimate evening" loading="lazy">
+      </div>
+      <div class="gather-copy">
+        <div class="section-kicker"><span>03</span><span>Good things, gathered</span></div>
+        <h2>From the water.<br><em>From around here.</em></h2>
+        <p>Our kitchen follows the catch, the harvest, and the people who bring them to us. Come down for a candlelit supper or just one more cup of coffee.</p>
+        <a class="text-link dark-link" href="#contact">Meet us at the table <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+
+    <section class="visit section-pad" id="contact">
+      <div class="section-kicker"><span>04</span><span>Find your way here</span></div>
+      <div class="visit-content">
+        <h2>The edge of<br><em>somewhere lovely.</em></h2>
+        <div class="visit-details">
+          <p>18 Harbor Lane<br>Rockport, Maine 04856</p>
+          <p><a href="tel:+12075550184">+1 207 555 0184</a><br><a href="mailto:hello@harborhouse.example">hello@harborhouse.example</a></p>
+          <a class="text-link dark-link" href="https://maps.google.com/?q=Rockport+Maine" target="_blank" rel="noreferrer">Get directions <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="footer-wordmark" href="#top">HARBOR HOUSE<small>HOTEL · COASTAL MAINE</small></a>
+    <span>Take the long way home.</span>
+    <span>© 2026 Harbor House Hotel</span>
+  </footer>
+</body>
+</html>
